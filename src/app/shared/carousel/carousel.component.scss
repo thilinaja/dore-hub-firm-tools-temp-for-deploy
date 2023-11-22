@@ -1,0 +1,87 @@
+/* Carousel Item Images */
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  /* You can set a max-height if needed */
+  max-height: 400px; /* Adjust the value as needed */
+}
+
+/* Carousel Indicators */
+.carousel-indicators.top-right {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators.top-right li {
+  /*background-color: #0066FF;*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px 5px 0 5px; /* Add top spacing here */
+  cursor: pointer;
+  transition: background-color 100s;
+}
+
+.carousel-indicators.top-right li.active {
+  background-color: #ffffff; /* Change background color to white */
+}
+
+/* Carousel Navigation Buttons */
+/*carousel*/
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  z-index: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 0;
+  margin-left: auto;
+}
+.carousel-indicators button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #9A9595;
+  border: none;
+
+  margin-bottom: 0;
+}
+
+.carousel-indicators button.active {
+  background-color:  #ffffff;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #9A9595;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity 100s ease;
+}
+
+.card-header{ background: none!important;}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+

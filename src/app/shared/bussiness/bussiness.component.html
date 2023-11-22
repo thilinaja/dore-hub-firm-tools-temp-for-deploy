@@ -1,0 +1,18 @@
+<div class="">
+  <div class="row"> <!--<div class="col-auto" *ngFor="let column of getTwoColumnCards()">-->
+    <div class="col-auto" >
+      <div class="row">
+        <div class="col-auto mb-3" *ngFor="let card of cardsData">
+          <div (click)="navigate(card.url) "   class="card cardItem bg-dark text-white m-0 p-0" [style.width]="card.width" style="cursor: pointer; height: 100px; background: #FFFFFF !important;" >
+            <div class="card-body d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
+              <img  [src]="card.imageUrl" class="mx-auto d-block mb-2" [style.width]="card.imgWidth" [style.height]="card.imgHeight" alt="Card image">
+              <p class="card-text-s fs-11 text-center">{{ card.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,21 @@
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: var(--tb-list-group-item-padding-y) var(--tb-list-group-item-padding-x);
+  color: var(--tb-list-group-color);
+ /* background-color: var(--tb-list-group-bg);*/
+  border-bottom: var(--tb-list-group-border-width) solid #19407A !important;
+}
+.card-header {
+  border-bottom: 1px solid #19407A !important;
+}
+.btn-primary {
+  background-color: #0066FF !important;
+  border-color:#0066FF !important;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff !important;
+  border-color: #ffffff;
+  color: #0066FF;
+}

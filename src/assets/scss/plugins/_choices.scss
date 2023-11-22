@@ -1,0 +1,78 @@
+//
+// _choices.scss
+//
+
+.ng-select{
+    .ng-select-container{
+        background-color: $form-select-bg;
+        border: $form-select-border-width solid $form-select-border-color;
+        border-radius: $form-select-border-radius !important;
+        min-height: 42.94px;
+        color: $input-color;
+        .ng-value-container .ng-input>input{
+            color: $input-color;
+        }
+    }
+    &.ng-select-opened>.ng-select-container{
+        background-color: $form-select-bg;
+        border-color: $form-select-border-color;
+    }
+
+    &.ng-select-multiple{
+        .ng-select-container{
+            .ng-value-container .ng-input>input{
+                color: $input-color;
+            }
+        }
+    }
+    
+    &.ng-select-single{
+        .ng-select-container{
+            .ng-value-container{
+                .ng-input{
+                    color: $input-color;
+                }
+            }
+        }
+    }
+
+    &.ng-select-disabled>.ng-select-container{
+        background-color: $input-disabled-bg;
+    }
+}
+
+.ng-dropdown-panel{
+    border: 1px solid var(--#{$prefix}border-color);
+    box-shadow: $dropdown-box-shadow;
+    background-color: $dropdown-bg;
+
+    .ng-dropdown-panel-items{
+
+        .ng-optgroup{
+            padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+        }
+        .ng-option{
+            background-color: var(--#{$prefix}secondary-bg);
+            color: $dropdown-link-color;
+            padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+
+            &.ng-option-selected,
+            &.ng-option-marked,
+            &.ng-option-selected.ng-option-marked{
+                background-color: $dropdown-link-hover-bg;
+                color: $dropdown-link-hover-color;
+            }
+        }
+
+        .ng-optgroup{
+            color: rgba(var(--#{$prefix}body-color-rgb), 0.5)
+        }
+    }
+    &.ng-select-bottom{
+        border-top-color: var(--#{$prefix}border-color);
+    }
+
+    &.ng-select-top{
+        border-bottom-color: var(--#{$prefix}border-color);
+    }
+}

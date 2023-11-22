@@ -1,0 +1,36 @@
+<div class="card" style="background: #223a5e;">
+  <div class="card-header d-flex align-items-center" style="background: #223a5e;">
+    <h5 class="card-title mb-0 flex-grow-1">
+      <img src="assets/images/icon/bx-support.svg"> &nbsp; Support Center
+    </h5>
+  </div>
+  <div class="card-body px-0">
+    <ngx-simplebar class="p-3 pt-0">
+      <ul class="list-group list-group-flush border-dashed mb-0" style="background: #223a5e;">
+        <li class="list-group-item px-0" style="background: #223a5e;" *ngFor="let contact of contacts">
+          <div class="d-flex">
+            <div class="flex-shrink-0 avatar-xs">
+              <span class="avatar-title bg-light p-1 rounded-circle">
+                <img [src]="contact.avatar" class="img-fluid" alt="" />
+              </span>
+            </div>
+            <div class="flex-grow-1 ms-2">
+              <h6 class="mb-1">{{ contact.name }}</h6>
+              <p class="fs-12 mb-0 text-muted">
+                <i class="mdi mdi-circle fs-10 align-middle text-success me-1"></i>
+                {{ contact.status }}
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-end">
+              <span style="width: 60px;" class="badge  rounded-pill text-bg-primary">{{ contact.location }}</span>
+            </div>
+          </div>
+        </li>
+        <!-- contacts here -->
+      </ul>
+      <div class="d-grid gap-2 mt-3">
+        <button class="btn btn-primary" type="button">Contact Support</button>
+      </div>
+    </ngx-simplebar>
+  </div>
+</div>

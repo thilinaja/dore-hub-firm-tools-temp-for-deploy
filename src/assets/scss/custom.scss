@@ -1,0 +1,136 @@
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#051939 ;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background:#3A3A3A;
+}
+
+
+.firm-date{
+  color: #FF6900;
+  font-size: 11px;
+  font-weight: normal;
+  margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.firm-title{
+  color:#1F385D;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0; font-family:  Classico URW, sans-serif !important;
+}
+.firm-news{
+  color:#1F385D;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.card-title-ms{
+  color: #1F385D;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.user-name-text-s{
+  color: #1F385D;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.user-name-sub-text-s{
+  color: #1F385D;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.dr-dty{
+
+  color: #FF6900;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+}
+
+.text-muted-xx{
+  color: #1F385D;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+
+}
+.day-dh{   color: #1F385D;font-family:  Objektiv VF Trial, sans-serif !important; font-weight: 600;}
+.dh-t-date{
+
+  color: #1F385D;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+
+
+}
+.crd-hrd {
+
+  z-index: 99;
+  background: #e7edf5;
+  position: sticky;
+  top: 70px;
+  overflow: hidden;
+}
+.btn-primary {
+  background: #0066FF !important;
+}
+
+.top-head-link{
+  color: #1F385D;
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  cursor: pointer;margin: 0 -.25rem;
+  padding: 0 .25rem; font-family:  Objektiv VF Trial, sans-serif !important;
+}
+.top-head-link:hover{
+  color: #1F385D;
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: normal; font-family:  Objektiv VF Trial, sans-serif !important;
+  cursor: pointer;margin: 0 -.25rem;
+  padding: 0 .25rem;
+  box-shadow: inset 100px 0 0 0 #0066FF;
+}
+.brand-names{
+
+  font-size: 18px;
+  font-weight: normal; color: #FF6900;
+  margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+  text-transform: uppercase;
+}
+@media (min-width: 1080px) and (max-width: 1650px)  {
+
+
+  .firm-date{
+    color: #FF6900;
+    font-size: 9px;
+    font-weight: normal;
+    margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+  }
+  .firm-title{
+    color: #1F385D;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+  }
+  .firm-news{
+    color:#1F385D;
+    font-size: 9px;
+    font-weight: normal;
+    margin-bottom: 0; font-family:  Objektiv VF Trial, sans-serif !important;
+  }
+
+}
+.card-text-xc{
+  font-weight: 500;
+  margin-bottom: 0;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+  color: #1F385D !important;
+}

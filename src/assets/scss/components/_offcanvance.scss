@@ -1,0 +1,55 @@
+//
+// offcanvas.scss
+
+ngx-aside {
+    z-index: $zindex-offcanvas;
+    position: relative;
+
+    aside{
+        background-color: $offcanvas-bg-color !important;
+        width: 400px !important;
+        max-width: 100% !important;
+    }
+}
+
+.overlay{
+    background-color: $black !important;
+    opacity: 0.5 !important;
+}
+
+aside {
+    &.ng-star-inserted {
+        padding: 0 !important;
+    }
+}
+
+ngx-aside-overlay {
+    >.overlay {
+        position: fixed !important;
+        z-index: $zindex-offcanvas-backdrop !important;
+    }
+}
+
+.offcanvas-top{
+    aside{
+        top: 0;
+        width: 100% !important;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: 400px !important;
+        max-height: 100% !important;
+    }
+}
+
+.offcanvas-bottom{
+    aside{
+        top: auto;
+        width: 100% !important;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 400px !important;
+        max-height: 100% !important;
+    }
+}

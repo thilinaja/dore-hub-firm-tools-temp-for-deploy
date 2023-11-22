@@ -1,0 +1,21 @@
+.cardItem:hover {
+  transform: scale(0.9, 0.9);
+
+}
+.card {
+  border-radius: 0.5rem !important;
+  width: 100px;
+  height: 100px;
+}
+
+.cardItem {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12) !important;
+  /*  backdrop-filter: blur(5px) contrast(.8);*/
+  /*background: rgba(20, 37, 39, 0.5) !important;*/
+
+}
+.empty-card {
+  display: none;
+}

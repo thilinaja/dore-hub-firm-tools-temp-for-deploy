@@ -1,0 +1,77 @@
+.log-head{
+  font-weight:normal;
+  color: #1F385D;
+  font-size: 36px;
+  margin-bottom: 0;
+  font-family: Classico URW, sans-serif !important;
+}
+.log-reg{
+  font-weight: normal;
+  color:#1F385D;
+  font-family:  Objektiv VF Trial, sans-serif !important;
+  font-size: 14px;
+  margin-bottom: 0;
+
+}
+.text-primary-s{
+  color: #1F385D;margin-bottom: 0;font-weight:normal;
+  font-family: Classico URW, sans-serif !important;
+
+}
+.text-muted-s{font-weight: normal;
+  color: #1F385D; font-family:  Objektiv VF Trial, sans-serif !important;  font-size: 16px;
+  margin-bottom: 0;
+}
+.btn-primary {font-family:  Objektiv VF Trial, sans-serif !important;
+  background-color: #FF6900 !important;
+  border-color:#FF6900 !important;
+}
+
+.btn-primary:hover {font-family:  Objektiv VF Trial, sans-serif !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff;
+  color: #FF6900;
+}
+
+.btn-primary:hover span svg path {
+  fill: #FF6900;
+}
+
+
+/*
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-section {
+  left: 15%;
+  top: 30%;
+  position: absolute;
+}
+*/
+
+
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.card{
+  border-radius: 0px !important;
+}

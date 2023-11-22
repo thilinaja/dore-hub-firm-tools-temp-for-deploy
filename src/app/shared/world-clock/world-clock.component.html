@@ -1,0 +1,49 @@
+<div class="card" style="background: #3e537c;">
+  <div class="card-header d-flex align-items-center" style="background: #3e537c;">
+    <h5 class="card-title text-white mb-0 flex-grow-1">Our Global Offices - Time</h5>
+
+  </div>
+  <div class="card-body px-0" >
+    <ngx-simplebar style="max-height: 100vh" class="p-3 pt-0">
+      <ul class="list-group list-group-flush  mb-0"  style="background: #3e537c;">
+
+        <li class="list-group-item border-0 px-0" style="background: #3e537c;"> <div class="card mb-0 border-0" style="background: #e6edf6;">  <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-grow-1 ms-2">
+              <h6 class="mb-1 fs-14 dr-dty ">New York</h6>
+              <p class="fs-11  mb-0 text-muted-xx">United States of America</p>
+            </div>
+            <div class="flex-shrink-0 text-end">
+              <h6 class="mb-1 dh-t-date fs-16">{{ newyork?.time }}</h6>
+              <p class=" fs-11 text-muted-xx mb-0">{{ newyork?.date }}</p>
+              <p class=" fs-11 mb-0  day-dh">{{ newyork?.day }}</p>
+            </div>
+          </div> </div></div>
+        </li>
+
+        <!-- Add other countries similarly -->
+        <li class="list-group-item border-0 px-0" style="background: #3e537c;"><div class="card mb-0 border-0" style="background: #e6edf6;">  <div class="card-body">
+          <div class="d-flex">
+            <div class="flex-grow-1 ms-2">
+              <h6 class="mb-1 fs-14 dr-dty">London</h6>
+              <p class="fs-11 mb-0 text-muted-xx">United Kingdom</p>
+            </div>
+            <div class="flex-shrink-0 text-end">
+              <h6 class="mb-1 dh-t-date  fs-16">{{ london?.time }}</h6>
+              <p class=" fs-11  text-muted-xx mb-0">{{ london?.date }}</p>
+              <p class=" fs-11 mb-0 day-dh">{{ london?.day }}</p>
+            </div>
+          </div>   </div>
+        </div>
+        </li>
+
+
+
+
+
+
+      </ul>
+
+    </ngx-simplebar>
+  </div>
+</div>

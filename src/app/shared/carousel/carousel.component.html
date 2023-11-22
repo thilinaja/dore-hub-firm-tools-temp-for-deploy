@@ -1,0 +1,56 @@
+<div class="row" *ngIf="announcements.length > 0">
+  <div class="col-md-12">
+    <div class="card-header  border-0 d-flex align-items-center crd-hrd">
+      <div id="myCarousel" class="carousel slide w-100" >
+        <div class=" card  border-0" style=" margin-bottom: 0px; background: transparent !important;">
+          <div class=" card-header   border-0 d-flex align-items-center" style="background: transparent !important;">
+            <p class="card-title-ms-dash mb-0 flex-grow-1" style="position: relative; left: -1rem;">
+              <span><img src="/assets/images/icon/megaphone.svg"> </span>&nbsp;&nbsp;Announcements
+            </p>
+            <div class="flex-shrink-0">
+              <!-- Bullet Indicators -->
+              <div class="justify-content-between">
+                <div class="carousel-indicators top-right">
+                  <button (click)="goToSlide(i)" *ngFor="let item of announcements; let i = index"
+                          [class.active]="i === activeIndex" data-bs-target="#myCarousel"></button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-inner mt-2 " style="border-bottom-left-radius: 1rem; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;">
+          <div *ngFor="let item of announcements; let i = index" class="carousel-item" [class.active]="i === activeIndex">
+            <a  class="announcement-link" (click)="openAnnouncment(item.redirectUrl)"
+                [style.cursor]="item.redirectUrl ? 'pointer' : 'default'">
+              <div class="row" style="background: #ffffff; border-bottom-left-radius: 1rem; border-top-left-radius: 1rem;">
+                <div class="col-md-6" style="border-bottom-left-radius: 1rem; border-top-left-radius: 1rem;">
+                  <img [src]="item.graphicPath" alt="Left Image" class="d-block img-fluid h-100 " style="width: 711px;  border-bottom-left-radius: 1rem; border-top-left-radius: 1rem;">
+                </div>
+                <div class="col-md-6" style="background: #ffffff; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;">
+                  <div class="carousel-description">
+                    <p class="firm-date mt-2">{{ item.startDateString }}</p>
+                    <p class="firm-title mt-1">{{ item.title }}</p>
+
+                    <p class="firm-news mt-1">{{ item.description }}</p>
+
+                    <!-- <p class="firm-title mt-1 text-truncate-two-lines-tit">{{ item.title }}</p>
+                         <p class="firm-news mt-1 text-truncate-two-lines-dec">{{ item.description }}</p>-->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div> </div>
+</div>
+
+<!--error message-->
+<!--<div class=" justify-content-start mt-5x " *ngIf="announcements.length == 0">
+  <div class="alert alert-warning" role="alert">
+     There is no announcement here at the moment...
+  </div>
+</div>-->
